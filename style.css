@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+body{
+    font-family: League Spartan;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: #5da5a4;
+}
+
+/* Fim das estilizações primárias */
+
+#container-photosnap{
+    border: none;
+    border-radius: 4px;
+    background: white;
+    margin: auto;
+    margin-top: 10vh;
+    border-left: 5px solid hsl(180, 29%, 50%);
+    padding: 35px;
+    display: flex;
+    width: 78%;
+    box-shadow: 5px 20px 40px hsla(180, 29%, 50%, 0.323);
+    max-width: 100%;
+}
+
+.img-ps{
+    margin-right: 25px;
+}
+
+/* Container photosnap que servirá com base para formatação dos cards posteriores */
+
+.name-ps{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.name-ps h2{
+    color: hsl(180, 29%, 50%);
+    font-size: 18px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.name-ps .new{
+    border: none;
+    background: hsl(180, 29%, 50%);
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 10px 3px 10px;
+    margin-top: -3px;
+    margin-right: 8px;
+    width: 50px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.name-ps .featured{
+    border: none;
+    border-radius: 20px;
+    background: hsl(180, 14%, 20%);
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 10px 3px 10px;
+    margin-top: -3px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.h1-ps h1{
+    font-size: 22px;
+    color: hsl(180, 14%, 20%);
+    margin-bottom: 16px;
+}
+
+.infos-ps{
+    display: flex;
+}
+
+.infos-ps li{
+    color: hsl(180, 8%, 52%);
+    font-weight: 500;
+    white-space:nowrap;
+    font-size: 17.5px;
+    margin-right: 20px;
+}
+
+.ps-btns{
+    display: flex;
+    align-items: center;
+    margin-left:8%;
+}
+
+.ps-btns button{
+    color: hsl(180, 29%, 50%);
+    background: hsl(180, 52%, 96%);
+    border: none;
+    height: 32px;
+    font-size: 17px;
+    font-family: 'League Spartan', sans-serif;
+    padding: 0 8px 0 8px;
+    border-radius: 5px;
+    margin-right: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ps-btns2{
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+}
+
+.ps-btns2 button{
+    color: hsl(180, 29%, 50%);
+    background: hsl(180, 52%, 96%);
+    border: none;
+    height: 32px;
+    font-size: 17px;
+    font-family: 'League Spartan', sans-serif;
+    padding: 0 8px 0 8px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ps-btns button:hover{
+    color: hsl(180, 52%, 96%);
+    background-color: hsl(180, 29%, 50%);
+}
+
+.ps-btns2 button:hover{
+    color: hsl(180, 52%, 96%);
+    background-color: hsl(180, 29%, 50%);
+}
+
+/* --------------------------- */
+#Cards-sem-borda-lateral
+{
+    border: none;
+    border-radius: 4px;
+    background: white;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 35px;
+    display: flex;
+    width: 78%;
+    box-shadow: 5px 20px 40px hsla(180, 29%, 50%, 0.323);
+    max-width: 100%;
+}
+
+#filtered-items{
+    margin-top: 20vh;
+    margin-left: 23vh;
+    justify-content: center;
+}
+
+/* Parte Responsiva */
+@media only screen and (max-width:768px) and (max-width:676px) {
+    #container-photosnap{
+        width: 75.8%;
+    }
+
+    .img-ps{
+        width: 38%;
+    }
+
+    .name-ps h2{
+        font-size: 12px;
+        margin: 19px 8px 15px -18vh;
+    }
+
+    .name-ps .new{
+        margin-top: 10px;
+        padding: 5px 5px 5px 5px;
+        height: 25px;
+    }
+
+    .name-ps .featured{
+        margin-top: 10px;
+        padding: 5px 5px 5px 5px;
+        height: 25px;
+    }
+    
+    .h1-ps h1{
+        font-size: 14px;
+        margin-left: -18vh;
+        margin-top: -3vh;
+    }
+
+    .infos-ps{
+        margin-left: -79%;
+        margin-bottom: 4%;
+        padding-left: 10%;
+        border-bottom: 2px solid black;
+    }
+
+    .infos-ps li{
+        font-size: 9px;
+        justify-content: start;
+        margin-bottom: 3%;
+    }
+
+    .ps-btns{
+        z-index: 3;
+        margin-left: -110%;
+        margin-top: 42%;
+        font-size: 12px;
+        justify-content: flex-start;
+        position: initial;
+        display: grid;
+        grid-template-columns: repeat(3, 10fr);
+    }
+
+    .ps-btns button{
+        font-size: 9px;
+        margin-top: 11%;
+        justify-content: flex-start;
+        position: initial;
+    }
+
+    .img-ps img{
+        z-index: 4;
+        margin: -16vh 5vh 3vh -5vh;
+    }
+
+    .ps-btns2{
+        z-index: 3; 
+        margin-left: -110%;
+        margin-top: 42%;
+        font-size: 12px;    
+        justify-content: flex-start;
+        position: initial;
+        display: grid;
+        grid-template-columns: repeat(3, 10fr);
+    }
+
+    .ps-btns2 button{
+        font-size: 10px;
+        margin-top: 11%;
+        justify-content: flex-start;
+        position: initial;
+    }
+
+    .ps-btns button:hover{
+        color: hsl(180, 52%, 96%);
+        background-color: hsl(180, 29%, 50%);
+    }
+    
+    .ps-btns2 button:hover{
+        color: hsl(180, 52%, 96%);
+        background-color: hsl(180, 29%, 50%);
+    }
+}
